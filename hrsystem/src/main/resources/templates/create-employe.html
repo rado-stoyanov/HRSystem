@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create Employe</title>
+</head>
+<body>
+
+	<form
+		method="post"
+		th:action="@{/htmlsaveemploye}"
+		th:object="${employe}">
+		
+		<label>First Name</label>			
+		<input type="text" placeholder="First Name" th:field="*{firstName}">
+		
+		<label>Last Name</label>	
+		<input type="text" placeholder="Last Name" th:field="*{lastName}">
+		
+		<label>Age</label>
+		<input type="text" placeholder="Age" th:field="*{age}">
+		
+		<label>City</label>
+		<input type="text" placeholder="City" th:field="*{city}">
+		
+		<label>University</label>
+		<input type="text" placeholder="University" th:field="*{university}">
+				
+		<button type="submit">Create Employe</button>
+		
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form
+		meyhod="post"
+		th:action="@{/authorization}"
+		th:object="${user}">
+				
+		<input type="text" placeholder="Account" th:field="*{account}">
+		<input type="password" placeholder="Passowrd" th:field="*{password}">
+		<input type="text" placeholder="E-mail" th:field="*{email}">
+		<input type="text" placeholder="Phone" th:field="*{phone}">	
+		
+		<button type="submit">Sign Up</button>
+			
+	</form>
+
+</body>
+</html>
